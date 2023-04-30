@@ -1,0 +1,37 @@
+<div class="img">
+    <img src="https://img.freepik.com/free-vector/illustration-life-insurance_53876-5308.jpg" alt="Trulli" width="750" height="670">
+
+</div>
+
+
+<div class="container">
+    <div class="row justify-content-center mt-5">
+    <div class="col-md-4">
+    <div class="card">
+    <div class="card-header text-center">
+    <h4>LogIn</h4>
+    </div>
+    <div class="card-body">
+
+        <form #userForm="ngForm" (ngSubmit)="onSubmit(userForm)">
+
+    <div class="form-group">
+    <label for="Email">Email </label>
+    <input [(ngModel)] = "login.Email" name="email" type="email" class="form-control" id="email" placeholder="Enter email">
+    </div>
+    <div class="form-group">
+    <label for="password">Password</label>
+    <input [(ngModel)] = "login.Password" name="password"  type="password" class="form-control" id="password" placeholder="Enter password"> <br>
+    </div>
+  
+    <button type="submit" class="btn btn-primary btn-block" id="loginButton" >Login</button><br>
+    </form>
+    <p>New User?<a routerLink="/user/signup" id="signupLink">Sign Up</a></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+   
+  
+  
