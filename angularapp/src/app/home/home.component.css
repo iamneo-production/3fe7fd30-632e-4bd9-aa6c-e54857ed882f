@@ -1,0 +1,101 @@
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-top: 10px;
+}
+.divclass
+{
+    background-color:rgb(233, 227, 227);
+    height: 350px;
+    /*background-image: url("https://www.bing.com/th?id=OIP.ezoKY6xD99M5D2wYMEERzgHaE8&w=305&h=204&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2");*/
+    background-image:url( "https://i1.wp.com/i.pinimg.com/originals/25/6a/66/256a666c8912df203dcb34c1a29bd42a.jpg?w=1140&ssl=1");
+    /*background-image: linear-gradient(to bottom right, red, yellow);*/
+
+    padding-bottom: 100px;
+    padding-top: 100px;
+    padding-left: 90px;
+    padding-right: 90px;
+    color:rgba(0, 0, 0, 0.55);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+    padding-bottom: 50px;
+    margin: 0px;
+  
+}
+#p1{
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    font-style: italic;
+    font-size:xx-large;
+    color: rgb(0, 0, 0);
+}
+marquee{
+    position: relative;
+}
+
+button
+{
+    padding: 10px;
+    margin-top: 30px;
+    background-color: rgb(172, 192, 199);
+    border-color: rgb(172, 192, 199) ;
+    border-radius: 10px;
+ 
+}
+
+.flex-container 
+{
+    height: 400px;
+    display: flex;
+    padding: 30px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.d1
+{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-top: 0px;
+    height: 100px;
+    margin-bottom: 70px;
+    color: rgb(0, 0, 0);
+
+}
+
+.d2
+{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-top: 0px;
+    height: 200px;
+    margin-bottom: 70px;
+}
+
+.d3{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-top: 0px;
+    height: 100px;
+    margin-bottom: 70px;
+}
+
+#p2{
+    padding-left: 10px;
+}
+
+p{
+    font-size:large;
+}
+
+.home{
+    background-color: rgb(253, 253, 249);
+}
+
+.main{
+    font-size: 1000px;
+}
