@@ -1,0 +1,125 @@
+
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+        <div class="container-fluid">
+    
+          <a class="navbar-brand" routerLink="/admin">Life Insurance</a>
+    
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    
+            <span class="navbar-toggler-icon"></span>
+    
+          </button>
+    
+          <div class="collapse navbar-collapse" id="navbarNav">
+    
+            <ul class="navbar-nav">
+    
+              <li class="nav-item">
+    
+                <a class="nav-link active" routerLink="/addpolicy" aria-current="page" >Add Policy</a>
+    
+              </li>
+    
+              <li class="nav-item">
+    
+                <a class="nav-link" routerLink="/policy-details">Policy Details</a>
+    
+              </li>
+    
+           
+    <li class="nav-item">
+
+                    <a class="nav-link" routerLink="/userprofile">AddApplicant </a>
+        
+                  </li>
+        
+        <li class="nav-item">
+        
+                        <a class="nav-link" routerLink="/login">Logout </a>
+            
+                      </li>
+    
+            </ul>
+    
+          </div>
+    
+        </div>
+    
+      </nav>
+    
+<div class="container">
+
+    <h4 class="head">PLAN-DETAILS</h4>
+
+     <table class="table">
+
+        <thead>
+
+    <tr>
+
+    <th scope="col">PlanId</th><br>
+
+    <th scope="col"> PolicyName</th><br>
+
+     <th scope="col">ApplicableAge</th><br>
+
+    <th scope="col">years</th><br>
+
+    <th scope="col">claimamount</th><br>
+
+    <th scope="col">InterestRate</th><br>
+
+    <th scope="col">DELETE</th>
+
+   
+
+    </tr>
+
+    </thead>
+
+    <tr *ngFor="let u of policy">
+
+    <td>{{u.planId}}</td><br>  
+
+    <td>{{u.policyName}}</td><br>
+
+     <td>{{u.applicableAge}}</td><br>
+
+    <td>{{u.years}}</td><br>
+
+    <td>{{u.claimamount}}</td><br>
+
+    <td>{{u.interestRate}}</td><br>
+
+
+   
+
+   
+
+    <!-- <td><button type="delete"><i (click)="delete(u.policyid)" class="fa fa-trash" style="font-size:20px;color:red;"></i>
+
+        delete
+
+        </button></td> -->
+
+        <td><button  class="btn-danger btn"  (click)="delete(u.planId)">delete</button></td>
+    </tr>
+
+        <div class=" Add">
+
+           
+
+<!-- </table> -->
+
+</div>
+
+
+
+
+
+
+
+
+

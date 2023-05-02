@@ -1,0 +1,140 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+        <div class="container-fluid">
+
+              <a class="navbar-brand" routerLink="/admin">Life Insurance</a>
+
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+                    <span class="navbar-toggler-icon"></span>
+
+                  </button>
+
+              <div class="collapse navbar-collapse" id="navbarNav">
+
+                    <ul class="navbar-nav">
+
+                          <li class="nav-item">
+
+                                <a class="nav-link active" routerLink="/addpolicy" aria-current="page">Add Policy</a>
+
+                              </li>
+
+                          <li class="nav-item">
+
+                                <a class="nav-link" routerLink="/policy-details">Policy Details</a>
+
+                              </li>
+
+                <li class="nav-item">
+
+                                <a class="nav-link" routerLink="/userprofile">AddApplicant </a>
+
+                              </li>
+
+                <li class="nav-item">
+
+                                <a class="nav-link" routerLink="/login">Logout </a>
+
+                              </li>
+                       
+            </ul>
+
+                  </div>
+
+            </div>
+
+      </nav>
+
+<div class="container">
+
+      <div class="row">
+
+            <div class="col-md-4"></div>
+
+            <div class="col-md-4">
+
+            <form [formGroup]="policyform" (ngSubmit)="onSubmit()" class="border border-black form-g">
+
+                <div>
+
+                    <h1>Add Policy</h1>
+                        <div class="form-group ">
+
+                              <label for="PolicyName"><b></b></label><br>
+
+                              <input type="text" formControlName="PolicyName" id="policyName" class="form-control"
+                            placeholder="Enter Policy Name">
+
+                            </div>
+
+                        <div class="form-group">
+
+                              <label for="Age"><b></b></label><br>
+
+                              <input type="text" formControlName="ApplicableAge" id="applicableAge" class="form-control"
+                            placeholder="Enter Appicable Age">
+
+                            </div>
+
+
+
+
+                        <div class="form-group">
+
+                              <label for="years"><b> </b></label><br>
+
+                              <input type="text" formControlName="years" id="years" class="form-control"
+                            placeholder="Enter Number of years">
+
+                            </div>
+
+
+
+
+                        <div class="form-group">
+
+                              <label for="CLAIMAMOUNT"><b> </b></label><br>
+
+                              <input type="text" formControlName="claimamount" id="claimamount" class="form-control"    
+                                placeholder="Enter your claim amount">
+
+                            </div>
+
+                        <div class="form-group">
+
+                              <label for="InterestRate "><b> </b></label><br>
+
+                              <input type="text" formControlName="InterestRate" id="InterestRate " class="form-control"
+                                    placeholder="Enter your interestrate">
+
+                            </div>
+
+                        <br>
+
+
+
+
+                        <div class=" Add">
+
+                              <div class="form-group">
+
+                                    <button class=" btn btn-primary" type="submit">ADD</button>
+
+                                  </div>
+
+
+
+
+                            </div>
+
+                      </div>
+
+                 
+            </form>
+
+             
+        </div>
+
+         </div>
