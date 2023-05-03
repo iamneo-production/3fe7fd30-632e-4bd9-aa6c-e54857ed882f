@@ -1,0 +1,41 @@
+<div class="im2">
+  <img src="https://www.healthcareradius.in/cloud/2021/11/15/Health-insurance-min_1.jpg" alt="Trulli" width="750" height="650">
+</div>
+<div class="container">
+    <div class="row">
+    <div class="col-md-6 mx-auto">
+    <h2 class="text-center mb-4">Register</h2>
+    <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+    <label for="useradmin">Enter User/Admin:</label>
+  <select class="form-control" formControlName="userrole" ngClass="{'is-invalid':submitted&&registerForm.controls.userrole.errors}" id="user" name="user" required>
+    <option value="user">User</option>
+    <option value="admin">Admin</option>
+  </select>
+    </div>
+    <div id="form" class="form-group">
+    <label for="email">Email address</label>
+    <input  type="email" class="form-control" formControlName="email" id="email" placeholder="Enter email" required>
+    </div>
+    <div class="form-group">
+    <label for="username">Username</label>
+    <input type="text" class="form-control" formControlName="username" id="username" placeholder="Enter Username" required>  
+    </div>
+    <div class="form-group">
+        <label for="mobilenumber">MobileNumber</label>
+        <input type="tel" class="form-control" formControlName="mobilenumber" id="mobileNumber" placeholder="Enter Mobilenumber" required>
+        </div>
+    <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" formControlName="password" id="password" placeholder="Password" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Confirm Password</label>
+            <input type="password" class="form-control" formControlName="password" id="ConfirmPassword" placeholder="Confirm Password" required>
+        </div>
+    <button id="submitButton" type="submit" class="btn btn-primary" >Register </button>
+    <p>Already User? <a id="siginLink" routerLink="/user/login">Login</a></p>
+    </form>
+    </div>
+    </div>
+    </div>
