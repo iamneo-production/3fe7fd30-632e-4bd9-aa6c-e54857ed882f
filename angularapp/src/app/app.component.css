@@ -1,0 +1,67 @@
+li
+{
+display: inline;
+}
+
+li 
+{
+float: left;
+}
+
+ul 
+{
+background-color: #dddddd;
+}
+
+ul 
+{
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: #333;
+height: 60px;
+}
+
+li 
+{
+float: left;
+}
+
+li a {
+display: block;
+color: rgb(233, 227, 227);
+text-align: center;
+padding: 22px 16px;
+text-decoration: none;
+}
+
+li a:hover 
+{
+background-color: rgb(233, 227, 227);
+color: #333;
+}
+
+ 
+
+li {
+    
+border-right: 1px solid #111;
+}
+
+ 
+
+li:last-child 
+{
+border-right: none;
+}
+
+ul 
+{
+    font-style: italic;
+ position: fixed;
+top: 0;
+width: 100%;
+}
+
+

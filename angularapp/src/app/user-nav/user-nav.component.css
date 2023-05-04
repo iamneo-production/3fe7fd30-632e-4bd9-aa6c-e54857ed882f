@@ -1,0 +1,171 @@
+S.s li {
+
+
+
+
+    display: inline;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+li {
+
+
+
+    float: left;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+ul {
+
+
+
+    background-color: #212121;
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+ul {
+
+
+
+    list-style-type: none;
+
+
+
+    margin: 0;
+
+
+
+    padding: 0;
+
+
+
+    overflow: hidden;
+
+
+
+    background-color: #8b8888;
+
+
+
+    height: 60px;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+li {
+
+
+
+    float: left;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+li a {
+
+
+
+    display: block;
+
+
+
+    color: rgb(27, 27, 27);
+
+
+
+    text-align: center;
+
+
+
+    padding: 22px 16px;
+
+
+
+    text-decoration: none;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+li a:hover {
+
+
+
+    background-color: rgb(244, 240, 240);
+
+
+
+    color: #0b0a0a;
+
+
+
+}
+
+img{
+    margin-top: 80px;
+    margin-left: 80px;
+    height: 500px;
+    width: 1000px;
+}

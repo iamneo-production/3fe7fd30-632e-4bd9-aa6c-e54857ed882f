@@ -1,0 +1,160 @@
+<nav>
+
+        <ul>
+    
+        <li><a routerLink="home">Life Insurance</a></li>
+    
+        <li><a href="userviewpolicy">View Policy</a></li>
+    
+        <li><a href="userprofile">Profile</a></li>
+    
+        
+    
+    
+    
+    
+    
+    <li style="float:right"><a routerLink="/login">Logout</a></li>
+    
+    </ul>
+    
+    </nav>
+
+
+<div class="container">
+
+      <br>
+
+      <div class="container-fluid">
+
+            <div class="row">
+
+                  <div class="col-md-6 offset-md-3">
+
+                        <form [formGroup]="policyForm" (ngSubmit)="onSubmit()">
+
+                              <br>
+
+                              <div class="form-group">
+
+                                    <label for="editName"><b>ApplicantName</b></label><br>
+
+                                    <input type="text" formControlName="ApplicantName"             name="editName"      
+                                  id="editName" class="form-control"               placeholder="Enter Applicant Name">
+
+                                  </div>
+
+                              <br>
+
+                              <div class="form-group">
+
+                                    <label for="editPolicy"><b>PolicyType</b></label><br>
+
+                                    <input type="textar" formControlName="PolicyType" id="editPolicy"
+                            class="form-control"               placeholder="Enter Applicant PolicyType">
+
+                                  </div>
+
+                              <br>
+
+
+
+
+                              <div class="form-group">
+
+                                    <label for="editAddress"><b>ApplicantAddress</b></label><br>
+
+                                    <input type="textar" formControlName="ApplicantAddress" id="editAddress"
+                            class="form-control"               placeholder="Enter Applicant Address">
+
+                                  </div>
+
+                              <br>
+
+                              <div class="form-group">
+
+                                    <label for="editmobile"><b>ApplicantMobile </b></label><br>
+
+                                    <input type="tel" formControlName="ApplicantMobile" id="editmobile"
+                            class="form-control"               placeholder="Enter Applicant Mobile">
+
+                                  </div>
+
+                              <br>
+
+                              <div class="form-group">
+
+                                    <label for="editEmail"><b>ApplicantEmail</b></label><br>
+
+                                    <input type="email" formControlName="ApplicantEmail" id="editEmail"
+                            class="form-control"               placeholder="Enter Applicant Email id(eg:xyz@gmail.com)">
+
+                                  </div>
+
+                              <br>
+
+                              <div class="form-group">
+
+                                    <label for="editAadharNo"><b>ApplicantAadhaar</b></label><br>
+
+                                    <input type="text" formControlName="ApplicantAadhaar" id="editAadharNo"
+                            class="form-control"               placeholder="Enter Applicant Aadhaar No">
+
+                                  </div>
+
+                              <br>
+
+                              <div class="form-group">
+
+                                    <label for="editPanNo"><b>ApplicantPan</b></label><br>
+
+                                    <input type="text" formControlName="ApplicantPan" id="editPanNo"
+                            class="form-control"               placeholder="Enter Applicant Pan">
+
+                                  </div>
+
+                              <br>
+
+                              <div class="form-group">
+
+                                    <label for="editSalary"><b>ApplicantSalary</b></label><br>
+
+                                    <input type="text" formControlName="ApplicantSalary" id="editSalary"
+                            class="form-control"               placeholder="Enter Applicant Salary">
+
+                                  </div>
+
+                              <br>
+
+                              <!--<div class="form-group">
+
+                                  <label for="salary"><b>Applicant Salary </b></label><br>
+
+                                  <input type="text" formControlName="ApplicantSalary" name="Salary" id="editSalary"
+                            class="form-control" placeholder="Enter Applicant ongoing Id">
+
+                                </div>-->
+
+                              <div class="mb-3">
+
+                                    <label for="Document"><b>Upload Document</b></label><br>
+
+                                    <input type="file" class="form-control" aria-label="file example" required>
+
+                                    <br><br>
+
+                                    <button type="submit" class="btn btn-primary" id="SubmitButton">Submit</button>
+
+                                 </div>
+
+                                  <br>
+
+                            </form>
+
+                      </div>
+
+                </div>
+
+          </div>
+
+</div>
